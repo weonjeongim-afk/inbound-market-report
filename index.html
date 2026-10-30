@@ -1722,7 +1722,7 @@ const a = links.find(x => x.dataset.ch === en.target.id), ol = a.closest('ol');
 // Navigation stays fully visible; never scroll away the first chapters.
 });
 }, { rootMargin: '-40% 0px -55% 0px' });
-['ch1', 'chM', 'ch2', 'chT', 'ch3'].forEach(id => io.observe($(id)));
+['ch1', 'chM', 'ch2', 'chT', 'ch3', 'chR'].forEach(id => io.observe($(id)));
 
 
 function toast(t) { const el = $('toast'); el.textContent = t; el.style.display = 'block'; clearTimeout(toast.h); toast.h = setTimeout(() => { el.style.display = 'none'; }, 3500); }
